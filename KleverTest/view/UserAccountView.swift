@@ -68,8 +68,6 @@ struct AccountRow: View {
     
     func formatDate(from lastOperation: Date) -> String {
         dateFormatter.dateFormat = "dd'/'MM'/'yyyy"
-//        dateFormatter.timeStyle = .none
-        
         return dateFormatter.string(from: lastOperation)
     }
     

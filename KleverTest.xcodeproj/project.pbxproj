@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C340C952713133700B2D4F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C340C942713133700B2D4F1 /* AppDelegate.swift */; };
 		2C340C972713133700B2D4F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C340C962713133700B2D4F1 /* SceneDelegate.swift */; };
-		2C340C992713133700B2D4F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C340C982713133700B2D4F1 /* ContentView.swift */; };
 		2C340C9C2713133700B2D4F1 /* KleverTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C340C9A2713133700B2D4F1 /* KleverTest.xcdatamodeld */; };
 		2C340C9E2713133800B2D4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C340C9D2713133800B2D4F1 /* Assets.xcassets */; };
 		2C340CA12713133800B2D4F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C340CA02713133800B2D4F1 /* Preview Assets.xcassets */; };
@@ -60,7 +59,6 @@
 		2C340C912713133700B2D4F1 /* KleverTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleverTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C340C942713133700B2D4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C340C962713133700B2D4F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C340C982713133700B2D4F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C340C9B2713133700B2D4F1 /* KleverTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KleverTest.xcdatamodel; sourceTree = "<group>"; };
 		2C340C9D2713133800B2D4F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C340CA02713133800B2D4F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				2CAA9F9527131C8B0052854C /* model */,
 				2C340C942713133700B2D4F1 /* AppDelegate.swift */,
 				2C340C962713133700B2D4F1 /* SceneDelegate.swift */,
-				2C340C982713133700B2D4F1 /* ContentView.swift */,
 				2C340C9D2713133800B2D4F1 /* Assets.xcassets */,
 				2C340CA22713133800B2D4F1 /* LaunchScreen.storyboard */,
 				2C340CA52713133800B2D4F1 /* Info.plist */,
@@ -523,7 +520,6 @@
 				2CAA9FA3271323190052854C /* UserAccountPresenter.swift in Sources */,
 				2CFF00312713D6FF00ABF485 /* accounts.pb.swift in Sources */,
 				2CAA9F9B27131E230052854C /* UserAccountRouter.swift in Sources */,
-				2C340C992713133700B2D4F1 /* ContentView.swift in Sources */,
 				2CFF002B2713282E00ABF485 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

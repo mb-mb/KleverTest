@@ -18,11 +18,7 @@ final class UserAPI {
     
     private init() {
         let group = PlatformSupport.makeEventLoopGroup(loopCount: 1)
-        
-//        defer {
-//            try? group.syncShutdownGracefully()
-//        }
-        
+                
         do {
             let channel = try GRPCChannelPool.with(target: .host("127.0.0.1", port: 50051),
                                                    transportSecurity: .plaintext,
@@ -49,8 +45,6 @@ final class UserAPI {
     func fetchUserDataGRPC() -> Future<AccountList, Error> {
         
         return Future { promisse in
-            
-            var accList = AccountList()
             guard let _ = self.client?.serviceName else {
                 print("service hasn't create yet")
                 return
@@ -70,20 +64,16 @@ final class UserAPI {
             
             call.response.whenComplete { (result) in
                 switch result {
-                case .success(let response):
-                    //print(response)
-                    print("finished call.status.whenComplete")
+                case .success:
+                    print("call.status.whenComplete")
                 case .failure(let error):
                     print("failure call.status.whenComplete: \(error)")
                 }
-                
             }
                        
             do {
                 let status = try call.response.wait()
                 print("status: \(status)")
-                promisse(.success(accList))
-                
             } catch {
                 print( "error: \(error)")
             }
