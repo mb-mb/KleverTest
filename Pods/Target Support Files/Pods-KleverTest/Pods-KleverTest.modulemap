@@ -1,0 +1,6 @@
+framework module Pods_KleverTest {
+  umbrella header "Pods-KleverTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

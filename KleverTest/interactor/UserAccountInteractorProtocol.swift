@@ -12,4 +12,5 @@ protocol UserAccountInteractorProtocol {
     var userAPI: UserAPI { get set }
 
     func fetchUserData() -> Future<UserData, Error>
+    func fetchUserDataGRPC() -> Future<AccountList, Error>
 }

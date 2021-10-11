@@ -10,9 +10,9 @@ import Foundation
 class UserData {
     var id: UUID
     var name: String = ""
-    var account: [Account]
+    var account: [AccountUser]
     
-    init(id: UUID, name: String, account: [Account]) {
+    init(id: UUID, name: String, account: [AccountUser]) {
         self.account = account
         self.id = id
         self.name = name
@@ -20,7 +20,7 @@ class UserData {
     
 }
 
-class Account: Identifiable {
+class AccountUser: Identifiable {
     var accountNumber: String
     var amount: Float
     var lastOperation: Date
@@ -33,7 +33,7 @@ class Account: Identifiable {
 }
 
 class UserDataList: ObservableObject {
-    @Published var accountItems: [Account] = []
+    @Published var accountItems: [AccountUser] = []
 }
 
 class UserDataName: ObservableObject {

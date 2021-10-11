@@ -28,7 +28,7 @@ struct UserAccountView: View, UserAccountViewProtocol {
             Text("User Account View")
             
             List {
-                Section(header: Text("data\t\tvalue")) {
+                Section(header: Text("data\t\t\tvalue")) {
                     VStack {
                         ForEach(0 ..< userDataList.accountItems.count) {
                             AccountRow(account: userDataList.accountItems[$0])
@@ -53,16 +53,22 @@ struct UserAccountView: View, UserAccountViewProtocol {
 }
 
 struct AccountRow: View {
-    var account: Account
+    var account: AccountUser
     let dateFormatter = DateFormatter()
 
     var body: some View {
-        Text("\(formatDate(from: account.lastOperation))\t\(formatFloat(from: account.amount))")
+        HStack {
+            Text("\(formatDate(from: account.lastOperation))")
+                .font(.system(size: 16, design: .monospaced))
+            Text("\(formatFloat(from:account.amount))")
+                .font(.system(size: 16, design: .monospaced))
+        }
+        
     }
     
     func formatDate(from lastOperation: Date) -> String {
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .none
+        dateFormatter.dateFormat = "dd'/'MM'/'yyyy"
+//        dateFormatter.timeStyle = .none
         
         return dateFormatter.string(from: lastOperation)
     }

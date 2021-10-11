@@ -32,7 +32,25 @@ class UserAccountInteractor: UserAccountInteractorProtocol {
                     promisse(.success(data))
                 }).store(in: &self.cancellables)
         }
-
     }
+    
+    func fetchUserDataGRPC() -> Future<AccountList, Error> {
+        return Future { promisse in
+            self.userAPI.fetchUserDataGRPC()
+                .sink(receiveCompletion: { completion in
+                    switch completion {
+                    case .finished:
+                        print("finished")
+                        break
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    }
+                }, receiveValue: { accList in
+                    promisse(.success(accList))
+                }).store(in: &self.cancellables)
+
+        }
+    }
+
 }
 

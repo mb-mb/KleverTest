@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,14 @@
 		2CFF0029271327E900ABF485 /* UserAccountInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF0028271327E900ABF485 /* UserAccountInteractorProtocol.swift */; };
 		2CFF002B2713282E00ABF485 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF002A2713282E00ABF485 /* UserAPI.swift */; };
 		2CFF002D2713B39200ABF485 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF002C2713B39200ABF485 /* ErrorView.swift */; };
+		2CFF00302713D6FF00ABF485 /* accounts.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF002E2713D6FE00ABF485 /* accounts.grpc.swift */; };
+		2CFF00312713D6FF00ABF485 /* accounts.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF002F2713D6FF00ABF485 /* accounts.pb.swift */; };
+		2CFF00342713D80A00ABF485 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF00332713D80A00ABF485 /* NIO */; };
+		2CFF00372713DCAD00ABF485 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF00362713DCAD00ABF485 /* SwiftProtobuf */; };
+		2CFF003A2713DCF600ABF485 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF00392713DCF600ABF485 /* GRPC */; };
+		3AADE819DFCDC22A0A9A6B45 /* Pods_KleverTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38617B455562938E638B38D4 /* Pods_KleverTestTests.framework */; };
+		90B2599E8DCB1733E19C820A /* Pods_KleverTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFEA0B5CFAF52CA3B0AF597 /* Pods_KleverTest.framework */; };
+		EE15BAD289C1B8D1F39F6BE3 /* Pods_KleverTest_KleverTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07663ADEFE8A5FE56788B01C /* Pods_KleverTest_KleverTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07663ADEFE8A5FE56788B01C /* Pods_KleverTest_KleverTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KleverTest_KleverTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		138F2AAABC28B5063514E3CC /* Pods-KleverTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KleverTestTests.release.xcconfig"; path = "Target Support Files/Pods-KleverTestTests/Pods-KleverTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		2AE401C9D6714549F0F319D0 /* Pods-KleverTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KleverTestTests.debug.xcconfig"; path = "Target Support Files/Pods-KleverTestTests/Pods-KleverTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C340C912713133700B2D4F1 /* KleverTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleverTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C340C942713133700B2D4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C340C962713133700B2D4F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +82,14 @@
 		2CFF0028271327E900ABF485 /* UserAccountInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountInteractorProtocol.swift; sourceTree = "<group>"; };
 		2CFF002A2713282E00ABF485 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		2CFF002C2713B39200ABF485 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		2CFF002E2713D6FE00ABF485 /* accounts.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = accounts.grpc.swift; sourceTree = "<group>"; };
+		2CFF002F2713D6FF00ABF485 /* accounts.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = accounts.pb.swift; sourceTree = "<group>"; };
+		2EFEA0B5CFAF52CA3B0AF597 /* Pods_KleverTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KleverTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34472E8585457EE5788B03FA /* Pods-KleverTest-KleverTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KleverTest-KleverTestUITests.release.xcconfig"; path = "Target Support Files/Pods-KleverTest-KleverTestUITests/Pods-KleverTest-KleverTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38617B455562938E638B38D4 /* Pods_KleverTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KleverTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4E9E5B2FF576F34D6EB847 /* Pods-KleverTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KleverTest.release.xcconfig"; path = "Target Support Files/Pods-KleverTest/Pods-KleverTest.release.xcconfig"; sourceTree = "<group>"; };
+		AC439654A5504980452ECE23 /* Pods-KleverTest-KleverTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KleverTest-KleverTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-KleverTest-KleverTestUITests/Pods-KleverTest-KleverTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B36291F464CE1BD222710F35 /* Pods-KleverTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KleverTest.debug.xcconfig"; path = "Target Support Files/Pods-KleverTest/Pods-KleverTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFF003A2713DCF600ABF485 /* GRPC in Frameworks */,
+				90B2599E8DCB1733E19C820A /* Pods_KleverTest.framework in Frameworks */,
+				2CFF00342713D80A00ABF485 /* NIO in Frameworks */,
+				2CFF00372713DCAD00ABF485 /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AADE819DFCDC22A0A9A6B45 /* Pods_KleverTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE15BAD289C1B8D1F39F6BE3 /* Pods_KleverTest_KleverTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +130,8 @@
 				2C340CAD2713133800B2D4F1 /* KleverTestTests */,
 				2C340CB82713133800B2D4F1 /* KleverTestUITests */,
 				2C340C922713133700B2D4F1 /* Products */,
+				A0EB1A1A561E2A3BA7854A39 /* Pods */,
+				C8C96F0A865DA7544C78AF97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +194,8 @@
 		2CAA9F9527131C8B0052854C /* model */ = {
 			isa = PBXGroup;
 			children = (
+				2CFF002E2713D6FE00ABF485 /* accounts.grpc.swift */,
+				2CFF002F2713D6FF00ABF485 /* accounts.pb.swift */,
 				2CAA9FA6271323CB0052854C /* UserData.swift */,
 				2CFF002A2713282E00ABF485 /* UserAPI.swift */,
 				2CFF002C2713B39200ABF485 /* ErrorView.swift */,
@@ -209,6 +238,29 @@
 			path = interactor;
 			sourceTree = "<group>";
 		};
+		A0EB1A1A561E2A3BA7854A39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B36291F464CE1BD222710F35 /* Pods-KleverTest.debug.xcconfig */,
+				5A4E9E5B2FF576F34D6EB847 /* Pods-KleverTest.release.xcconfig */,
+				AC439654A5504980452ECE23 /* Pods-KleverTest-KleverTestUITests.debug.xcconfig */,
+				34472E8585457EE5788B03FA /* Pods-KleverTest-KleverTestUITests.release.xcconfig */,
+				2AE401C9D6714549F0F319D0 /* Pods-KleverTestTests.debug.xcconfig */,
+				138F2AAABC28B5063514E3CC /* Pods-KleverTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8C96F0A865DA7544C78AF97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EFEA0B5CFAF52CA3B0AF597 /* Pods_KleverTest.framework */,
+				07663ADEFE8A5FE56788B01C /* Pods_KleverTest_KleverTestUITests.framework */,
+				38617B455562938E638B38D4 /* Pods_KleverTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,15 +268,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C340CBE2713133800B2D4F1 /* Build configuration list for PBXNativeTarget "KleverTest" */;
 			buildPhases = (
+				14E8F90A7DCD6A7D690FBCEB /* [CP] Check Pods Manifest.lock */,
 				2C340C8D2713133700B2D4F1 /* Sources */,
 				2C340C8E2713133700B2D4F1 /* Frameworks */,
 				2C340C8F2713133700B2D4F1 /* Resources */,
+				942C2AACF7A9693BB2E7F6FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = KleverTest;
+			packageProductDependencies = (
+				2CFF00332713D80A00ABF485 /* NIO */,
+				2CFF00362713DCAD00ABF485 /* SwiftProtobuf */,
+				2CFF00392713DCF600ABF485 /* GRPC */,
+			);
 			productName = KleverTest;
 			productReference = 2C340C912713133700B2D4F1 /* KleverTest.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C340CC12713133800B2D4F1 /* Build configuration list for PBXNativeTarget "KleverTestTests" */;
 			buildPhases = (
+				6859381394B64205B0A160F1 /* [CP] Check Pods Manifest.lock */,
 				2C340CA62713133800B2D4F1 /* Sources */,
 				2C340CA72713133800B2D4F1 /* Frameworks */,
 				2C340CA82713133800B2D4F1 /* Resources */,
@@ -251,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C340CC42713133800B2D4F1 /* Build configuration list for PBXNativeTarget "KleverTestUITests" */;
 			buildPhases = (
+				085C34D81DEBDF877BEBF2F1 /* [CP] Check Pods Manifest.lock */,
 				2C340CB12713133800B2D4F1 /* Sources */,
 				2C340CB22713133800B2D4F1 /* Frameworks */,
 				2C340CB32713133800B2D4F1 /* Resources */,
+				70D05BCF229F52D909C01328 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +358,11 @@
 				Base,
 			);
 			mainGroup = 2C340C882713133700B2D4F1;
+			packageReferences = (
+				2CFF00322713D80A00ABF485 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				2CFF00352713DCAD00ABF485 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				2CFF00382713DCF600ABF485 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
 			productRefGroup = 2C340C922713133700B2D4F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,6 +401,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		085C34D81DEBDF877BEBF2F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KleverTest-KleverTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14E8F90A7DCD6A7D690FBCEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KleverTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6859381394B64205B0A160F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KleverTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70D05BCF229F52D909C01328 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KleverTest-KleverTestUITests/Pods-KleverTest-KleverTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KleverTest-KleverTestUITests/Pods-KleverTest-KleverTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KleverTest-KleverTestUITests/Pods-KleverTest-KleverTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		942C2AACF7A9693BB2E7F6FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KleverTest/Pods-KleverTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KleverTest/Pods-KleverTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KleverTest/Pods-KleverTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C340C8D2713133700B2D4F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -347,9 +517,11 @@
 				2CFF0027271327AE00ABF485 /* UserAccountInteractor.swift in Sources */,
 				2CAA9FA7271323CB0052854C /* UserData.swift in Sources */,
 				2C340C972713133700B2D4F1 /* SceneDelegate.swift in Sources */,
+				2CFF00302713D6FF00ABF485 /* accounts.grpc.swift in Sources */,
 				2CFF0029271327E900ABF485 /* UserAccountInteractorProtocol.swift in Sources */,
 				2CAA9F9D27131E440052854C /* UserAccountView.swift in Sources */,
 				2CAA9FA3271323190052854C /* UserAccountPresenter.swift in Sources */,
+				2CFF00312713D6FF00ABF485 /* accounts.pb.swift in Sources */,
 				2CAA9F9B27131E230052854C /* UserAccountRouter.swift in Sources */,
 				2C340C992713133700B2D4F1 /* ContentView.swift in Sources */,
 				2CFF002B2713282E00ABF485 /* UserAPI.swift in Sources */,
@@ -517,6 +689,7 @@
 		};
 		2C340CBF2713133800B2D4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36291F464CE1BD222710F35 /* Pods-KleverTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -538,6 +711,7 @@
 		};
 		2C340CC02713133800B2D4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4E9E5B2FF576F34D6EB847 /* Pods-KleverTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -559,6 +733,7 @@
 		};
 		2C340CC22713133800B2D4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE401C9D6714549F0F319D0 /* Pods-KleverTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +756,7 @@
 		};
 		2C340CC32713133800B2D4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138F2AAABC28B5063514E3CC /* Pods-KleverTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +779,7 @@
 		};
 		2C340CC52713133800B2D4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC439654A5504980452ECE23 /* Pods-KleverTest-KleverTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,6 +800,7 @@
 		};
 		2C340CC62713133800B2D4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34472E8585457EE5788B03FA /* Pods-KleverTest-KleverTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -681,6 +859,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CFF00322713D80A00ABF485 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.33.0;
+			};
+		};
+		2CFF00352713DCAD00ABF485 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.18.0;
+			};
+		};
+		2CFF00382713DCF600ABF485 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CFF00332713D80A00ABF485 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF00322713D80A00ABF485 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		2CFF00362713DCAD00ABF485 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF00352713DCAD00ABF485 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		2CFF00392713DCF600ABF485 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CFF00382713DCF600ABF485 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2C340C9A2713133700B2D4F1 /* KleverTest.xcdatamodeld */ = {

@@ -12,8 +12,11 @@ final class UserAccountPresenter {
     var view: UserAccountView?
     var interactor: UserAccountInteractorProtocol
     var cancellables: Set<AnyCancellable> = []
+    let dateFormatter = DateFormatter()
     
     @Published var userDataList: UserDataList
+
+
     
     init(view: UserAccountView? = nil, interactor: UserAccountInteractorProtocol,
          accountItems: UserDataList) {
@@ -21,6 +24,10 @@ final class UserAccountPresenter {
         self.interactor = interactor
         self.userDataList = accountItems
         self.view?.userDataList.accountItems = self.userDataList.accountItems
+        
+        dateFormatter.dateFormat = "dd'/'MM'/'yyyy"
+        
+        
     }
     
     
@@ -28,6 +35,7 @@ final class UserAccountPresenter {
 
 extension UserAccountPresenter: UserAccountPresenterProtocol {
 
+    
     
     func initialView() -> UserAccountViewProtocol {
         let name = UserDataName()
@@ -38,15 +46,18 @@ extension UserAccountPresenter: UserAccountPresenterProtocol {
                                     userDataList: self.userDataList,
                                     name: name,
                                     account: account)
+        
         if let view = view {
             return view
         }
+        
+        
         
         return ErrorView() as! UserAccountViewProtocol
     }
     
     func fetchUserData() -> Void {
-        interactor.fetchUserData()
+        interactor.fetchUserDataGRPC()
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
@@ -55,18 +66,19 @@ extension UserAccountPresenter: UserAccountPresenterProtocol {
                     print(error.localizedDescription)
                 }
             }, receiveValue: { [weak self] data in
-                let tempItemAccount = UserDataList()
-                _ = data.account.map { item in
-                    print(item)
-                    let account = Account(accountNumber: item.accountNumber, amount: item.amount,
-                                          lastOperation: item.lastOperation)
-                    tempItemAccount.accountItems.append(account)
+                var accountUser: [AccountUser] = []
+                _ = data.accounts.map { account in
+                    let dt = self?.dateFormatter.date(from: account.lastOperation)
+                    let account = AccountUser(accountNumber: account.id,
+                                              amount: Float(account.amount) ?? Float(0),
+                                              lastOperation: dt ?? Date())
+                    accountUser.append(account)
                 }
-                self?.view?.userDataList.accountItems = tempItemAccount.accountItems
+                self?.view?.userDataList.accountItems = accountUser
             })
             .store(in: &self.cancellables)
-        
     }
+    
     
 
 }
