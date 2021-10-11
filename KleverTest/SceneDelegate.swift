@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
-        // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        let contentView = ContentView().environment(\.managedObjectContext, context)
+        // Add `@Environment(\.managedObjectContext)` in the views that will need the context.        
+        let contentView = routeToUserAccount().environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -34,6 +34,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
 
+    func routeToUserAccount() -> some View {
+        let route = UserAccountRouter()
+        return route.routeToUserAccount()
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

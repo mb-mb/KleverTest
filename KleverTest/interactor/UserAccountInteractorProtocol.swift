@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import Combine
+
+protocol UserAccountInteractorProtocol {
+    var userAPI: UserAPI { get set }
+
+    func fetchUserData() -> Future<UserData, Error>
+}

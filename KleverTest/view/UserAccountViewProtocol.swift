@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
+protocol UserAccountViewProtocol  {
+    var presenter: UserAccountPresenterProtocol? { get set }
+
+}

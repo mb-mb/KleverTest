@@ -16,6 +16,16 @@
 		2C340CA42713133800B2D4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C340CA22713133800B2D4F1 /* LaunchScreen.storyboard */; };
 		2C340CAF2713133800B2D4F1 /* KleverTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C340CAE2713133800B2D4F1 /* KleverTestTests.swift */; };
 		2C340CBA2713133800B2D4F1 /* KleverTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C340CB92713133800B2D4F1 /* KleverTestUITests.swift */; };
+		2CAA9F9B27131E230052854C /* UserAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA9F9A27131E230052854C /* UserAccountRouter.swift */; };
+		2CAA9F9D27131E440052854C /* UserAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA9F9C27131E440052854C /* UserAccountView.swift */; };
+		2CAA9F9F27131EBB0052854C /* UserAccountViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA9F9E27131EBB0052854C /* UserAccountViewProtocol.swift */; };
+		2CAA9FA3271323190052854C /* UserAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA9FA2271323190052854C /* UserAccountPresenter.swift */; };
+		2CAA9FA5271323620052854C /* UserAccountPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA9FA4271323620052854C /* UserAccountPresenterProtocol.swift */; };
+		2CAA9FA7271323CB0052854C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA9FA6271323CB0052854C /* UserData.swift */; };
+		2CFF0027271327AE00ABF485 /* UserAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF0026271327AE00ABF485 /* UserAccountInteractor.swift */; };
+		2CFF0029271327E900ABF485 /* UserAccountInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF0028271327E900ABF485 /* UserAccountInteractorProtocol.swift */; };
+		2CFF002B2713282E00ABF485 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF002A2713282E00ABF485 /* UserAPI.swift */; };
+		2CFF002D2713B39200ABF485 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF002C2713B39200ABF485 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		2C340CB52713133800B2D4F1 /* KleverTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleverTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C340CB92713133800B2D4F1 /* KleverTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverTestUITests.swift; sourceTree = "<group>"; };
 		2C340CBB2713133800B2D4F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CAA9F9A27131E230052854C /* UserAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountRouter.swift; sourceTree = "<group>"; };
+		2CAA9F9C27131E440052854C /* UserAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountView.swift; sourceTree = "<group>"; };
+		2CAA9F9E27131EBB0052854C /* UserAccountViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewProtocol.swift; sourceTree = "<group>"; };
+		2CAA9FA2271323190052854C /* UserAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountPresenter.swift; sourceTree = "<group>"; };
+		2CAA9FA4271323620052854C /* UserAccountPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountPresenterProtocol.swift; sourceTree = "<group>"; };
+		2CAA9FA6271323CB0052854C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2CFF0026271327AE00ABF485 /* UserAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountInteractor.swift; sourceTree = "<group>"; };
+		2CFF0028271327E900ABF485 /* UserAccountInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountInteractorProtocol.swift; sourceTree = "<group>"; };
+		2CFF002A2713282E00ABF485 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		2CFF002C2713B39200ABF485 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,11 @@
 		2C340C932713133700B2D4F1 /* KleverTest */ = {
 			isa = PBXGroup;
 			children = (
+				2CAA9F9927131CBC0052854C /* interactor */,
+				2CAA9F9827131CB50052854C /* presenter */,
+				2CAA9F9727131CA40052854C /* router */,
+				2CAA9F9627131C9D0052854C /* view */,
+				2CAA9F9527131C8B0052854C /* model */,
 				2C340C942713133700B2D4F1 /* AppDelegate.swift */,
 				2C340C962713133700B2D4F1 /* SceneDelegate.swift */,
 				2C340C982713133700B2D4F1 /* ContentView.swift */,
@@ -137,6 +162,51 @@
 				2C340CBB2713133800B2D4F1 /* Info.plist */,
 			);
 			path = KleverTestUITests;
+			sourceTree = "<group>";
+		};
+		2CAA9F9527131C8B0052854C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA9FA6271323CB0052854C /* UserData.swift */,
+				2CFF002A2713282E00ABF485 /* UserAPI.swift */,
+				2CFF002C2713B39200ABF485 /* ErrorView.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2CAA9F9627131C9D0052854C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA9F9C27131E440052854C /* UserAccountView.swift */,
+				2CAA9F9E27131EBB0052854C /* UserAccountViewProtocol.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2CAA9F9727131CA40052854C /* router */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA9F9A27131E230052854C /* UserAccountRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		2CAA9F9827131CB50052854C /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA9FA2271323190052854C /* UserAccountPresenter.swift */,
+				2CAA9FA4271323620052854C /* UserAccountPresenterProtocol.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		2CAA9F9927131CBC0052854C /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2CFF0026271327AE00ABF485 /* UserAccountInteractor.swift */,
+				2CFF0028271327E900ABF485 /* UserAccountInteractorProtocol.swift */,
+			);
+			path = interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +340,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C340C9C2713133700B2D4F1 /* KleverTest.xcdatamodeld in Sources */,
+				2CAA9FA5271323620052854C /* UserAccountPresenterProtocol.swift in Sources */,
+				2CFF002D2713B39200ABF485 /* ErrorView.swift in Sources */,
+				2CAA9F9F27131EBB0052854C /* UserAccountViewProtocol.swift in Sources */,
 				2C340C952713133700B2D4F1 /* AppDelegate.swift in Sources */,
+				2CFF0027271327AE00ABF485 /* UserAccountInteractor.swift in Sources */,
+				2CAA9FA7271323CB0052854C /* UserData.swift in Sources */,
 				2C340C972713133700B2D4F1 /* SceneDelegate.swift in Sources */,
+				2CFF0029271327E900ABF485 /* UserAccountInteractorProtocol.swift in Sources */,
+				2CAA9F9D27131E440052854C /* UserAccountView.swift in Sources */,
+				2CAA9FA3271323190052854C /* UserAccountPresenter.swift in Sources */,
+				2CAA9F9B27131E230052854C /* UserAccountRouter.swift in Sources */,
 				2C340C992713133700B2D4F1 /* ContentView.swift in Sources */,
+				2CFF002B2713282E00ABF485 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

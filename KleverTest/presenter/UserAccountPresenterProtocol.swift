@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
+
+protocol UserAccountPresenterProtocol {
+    var view: UserAccountView? { get set }
+    
+    func initialView() -> UserAccountViewProtocol
+    func fetchUserData() -> Void 
+}
